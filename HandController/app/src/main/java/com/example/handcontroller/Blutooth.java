@@ -18,15 +18,12 @@ import javax.crypto.Mac;
 
 import static android.support.v4.app.ActivityCompat.startActivityForResult;
 
-/**
- * Created by Даня on 26.03.2018.
- */
 
 public class Blutooth {
 
     public static String Mac="98:D3:31:F4:6F:4E";
 
-   /* public  static void startSocket(final Context context) {
+    public  static void startSocket(final Context context) {
         Runnable runnable =new Runnable() {
             @Override
             public void run() {
@@ -37,8 +34,8 @@ public class Blutooth {
                 else {
                     try {
                         BluetoothSocket clientSocket;
-                        String enableBT = BluetoothAdapter.ACTION_REQUEST_ENABLE;
-                        startActivityForResult(new Intent(enableBT), 0);
+                       // String enableBT = BluetoothAdapter.ACTION_REQUEST_ENABLE;
+                        //startActivityForResult(new Intent(enableBT), 0);
                         BluetoothAdapter bluetooth = BluetoothAdapter.getDefaultAdapter();
                         BluetoothDevice device = bluetooth.getRemoteDevice(Blutooth.Mac);
                         //Инициируем соединение с устройством
@@ -97,7 +94,7 @@ public class Blutooth {
         Thread thread = new Thread(runnable);
         thread.start();
 
-}*/
+}
 
 
 
