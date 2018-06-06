@@ -194,7 +194,7 @@ public class VoiceActivity extends AppCompatActivity {
         public boolean onTouch(View v, MotionEvent event) {
             if (event.getAction()==MotionEvent.ACTION_DOWN){
                 InputMethodManager imm =(InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-                Blutooth.keybClose(imm);
+                //Blutooth.keybClose(imm);
                 return true;
             }
             return false;

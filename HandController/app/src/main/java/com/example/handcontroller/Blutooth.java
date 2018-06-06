@@ -23,7 +23,7 @@ public class Blutooth {
 
     public static String Mac="98:D3:31:F4:6F:4E";
 
-    public  static void startSocket(final Context context) {
+    /*public  static void startSocket(final Context context) {
         Runnable runnable =new Runnable() {
             @Override
             public void run() {
@@ -94,7 +94,7 @@ public class Blutooth {
         Thread thread = new Thread(runnable);
         thread.start();
 
-}
+}*/
 
 
 

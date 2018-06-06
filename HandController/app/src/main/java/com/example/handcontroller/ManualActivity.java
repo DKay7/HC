@@ -59,7 +59,7 @@ public class ManualActivity extends AppCompatActivity {
         Fifth.setOnSeekBarChangeListener(Listener);
         TransmitBut.setOnClickListener(TransmitListener);
 
-       /* Runnable runnable =new Runnable() {
+        Runnable runnable =new Runnable() {
             @Override
             public void run() {
 
@@ -126,9 +126,8 @@ public class ManualActivity extends AppCompatActivity {
         };
 
         Thread thread = new Thread(runnable);
-        thread.start();*/
+        thread.start();
 
-        Blutooth.startSocket(getApplicationContext());
 
     }
 
