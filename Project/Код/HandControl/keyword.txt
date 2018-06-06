@@ -1,0 +1,7 @@
+HandControl			KEYWORD1
+SymbolTranslate		KEYWORD2
+SentenceTranslate	KEYWORD2
+getSymbol			KEYWORD2
+SetPosition			KEYWORD2
+CharToInt			KEYWORD2
+getPosition			KEYWORD2
