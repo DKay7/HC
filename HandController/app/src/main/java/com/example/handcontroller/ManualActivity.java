@@ -127,6 +127,7 @@ public class ManualActivity extends AppCompatActivity {
 
         Thread thread = new Thread(runnable);
         thread.start();*/
+
         Blutooth.startSocket(getApplicationContext());
 
     }
