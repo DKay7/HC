@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Hand Controller</string>
+    <string name="start_speech_but">Управление голосом</string>
+    <string name="start_translate_but">Перевести текст</string>
+    <string name="start_manual_but">Ручной режим</string>
+    <string name="start_exit_but">Выход</string>
+    <string name="text_hint">Вводите текст сюда</string>
+    <string name="textH1">Перевод текста</string>
+    <string name="startH1">Контроллер манипулятора</string>
+    <string name="startH2">Выберете тип управления</string>
+    <string name="speech_but">Нажмите и говорите</string>
+    <string name="voice_hint">Распознанный текст появится тут</string>
+    <string name="voiceH1">Распознавание речи</string>
+    <string name="rec_error">К сожалению распознавание речи невозможно</string>
+    <string name="rec_unheard">Говорите, пожалуйста, громче. Вас плохо слышно</string>
+    <string name="manualH1">Ручное управление</string>
+    <string name="transmit_data">Передать данные</string>
+    <string name="thumb">Большой</string>
+    <string name="index">Указательный</string>
+    <string name="middle">Средний</string>
+    <string name="ring">Безымянный</string>
+    <string name="pinky">Мизинец</string>
+    <string name="bt_isnt_exist">К сожалению, на устройстве отсутсвует модуль блютуз</string>
+    <string name="bt_con_ok">Bluetooth активирован</string>
+    <string name="bt_con_err">Ошибка подключения Bluetooth</string>
+    <string name="bt_disCon_err">Ошибка с Bluetooth. Перезапустите приложение</string>
+    <string name="digital_check_er">Цифры / числа отправлять нельзя!</string>
+    <string name="send_con_err">Подключение отсутствует!</string>
+    <string name="send_err">Ошибка отправки</string>
+    <string name="send_ok">Отправил</string>
+</resources>
