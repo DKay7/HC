@@ -6,7 +6,7 @@
  Using CP1251
  »спользуетс€ таблица CP1251
  */
-const int navigate[Hand::n][Hand::m]= {
+const int navigate[Hand::n][Hand::m]= { //навигационна€ матрица
 {224, 180, 180, 180, 180, 180},//а
 {225, 90, 0, 180, 180, 180},//б
 {226, 0, 0, 0, 0, 0},//в
@@ -41,7 +41,7 @@ const int navigate[Hand::n][Hand::m]= {
 {255, 90, 90, 90, 180, 180}};//€
  
  
-	void Hand :: att(){
+	void Hand :: att(){ //процедура инициации сервоприводов
 
     First.attach(ServoIn1);
     Second.attach(ServoIn2);
@@ -51,9 +51,9 @@ const int navigate[Hand::n][Hand::m]= {
 }
  
  
-	 bool Hand:: check(int inf){//¬озвращает true если передано число
+	 bool Hand:: check(int inf){//¬озвращает true если передано число (цз учета флага)
   	
-  	switch(inf){
+  	switch(inf){ 
   		case 0:
   			return true;
   			break;
@@ -68,7 +68,7 @@ const int navigate[Hand::n][Hand::m]= {
 
  
  
-void Hand :: SymbolTranslate(unsigned char a){
+void Hand :: SymbolTranslate(unsigned char a){ //перевод символов в жесты
     
    	int str=-1;
     int i;
@@ -84,7 +84,7 @@ void Hand :: SymbolTranslate(unsigned char a){
 	}
 	else{
 
-    First.write(navigate[str][1]);
+    First.write(navigate[str][1]); //высавл€ем сервоприводы в нужное положение
     Second.write(navigate[str][2]);
     Third.write(navigate[str][3]);
     Fourth.write(navigate[str][4]);
@@ -96,7 +96,7 @@ void Hand :: SymbolTranslate(unsigned char a){
 	}
 }
  
-void Hand :: SentenceTranslate(char* s){
+void Hand :: SentenceTranslate(char* s){ //перевод предложени€ в жесты
     unsigned char a;
     for(size_t i=0; i< strlen(s); i++){
         a=s[i];
@@ -105,7 +105,7 @@ void Hand :: SentenceTranslate(char* s){
     }
 }
     
-void  Hand :: SetPosition(int a[5]){
+void  Hand :: SetPosition(int a[5]){ //–ежим ручного управлени€. 
     
 	First.write(a[0]);
     Second.write(a[1]);
@@ -124,7 +124,7 @@ void  Hand :: SetPosition(int a[5]){
  
 int  Hand :: getPosition(int fingerNum){
  
-    switch(fingerNum){
+    switch(fingerNum){ //возвращает угол поворота сервопривода
         case 1:
             return First.read();
             break;
