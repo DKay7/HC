@@ -41,8 +41,8 @@ public class TextActivity extends AppCompatActivity{
         TransBut=(Button)findViewById(R.id.translateBut);
         Click=(TextView)findViewById(R.id.TClick);
         TransBut.setOnClickListener(TransButListener);
-        TrTxt.setOnEditorActionListener(EnterButListener);
-        Click.setOnTouchListener(ClickListener);
+        //TrTxt.setOnEditorActionListener(EnterButListener);
+        //Click.setOnTouchListener(ClickListener);
 
 
         Runnable runnable =new Runnable() {
@@ -178,7 +178,7 @@ public class TextActivity extends AppCompatActivity{
     };
 
 
-    TextView.OnEditorActionListener EnterButListener = new TextView.OnEditorActionListener() {
+    /*TextView.OnEditorActionListener EnterButListener = new TextView.OnEditorActionListener() {
         @Override
         public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
             if (actionId == EditorInfo.IME_ACTION_DONE){
@@ -200,7 +200,7 @@ public class TextActivity extends AppCompatActivity{
             }
             return false;
         }
-    };
+    };*/
 
 
     private boolean CheckWord(String s){//возвращает false, если введенное значение -- не слово
@@ -209,7 +209,7 @@ public class TextActivity extends AppCompatActivity{
             for (int i=0; i<s.length(); i++){
                 char c;
                 c=s.charAt(i);
-                if((c>='0'&&c<='9')){
+                if((c>='0'&&c<='9')||(c==' ')){
                     return false;
                 }
             }
