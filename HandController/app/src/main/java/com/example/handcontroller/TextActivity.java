@@ -37,11 +37,11 @@ public class TextActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         erCount=0;
         setContentView(R.layout.activity_text);
-        TrTxt=(EditText)findViewById(R.id.textToTrans);
+        //TrTxt=(EditText)findViewById(R.id.textToTrans);
         TransBut=(Button)findViewById(R.id.translateBut);
         Click=(TextView)findViewById(R.id.TClick);
         TransBut.setOnClickListener(TransButListener);
-        TrTxt.setOnEditorActionListener(EnterButListener);
+        //TrTxt.setOnEditorActionListener(EnterButListener);
         Click.setOnTouchListener(ClickListener);
 
 
@@ -178,7 +178,7 @@ public class TextActivity extends AppCompatActivity{
     };
 
 
-    TextView.OnEditorActionListener EnterButListener = new TextView.OnEditorActionListener() {
+   /* TextView.OnEditorActionListener EnterButListener = new TextView.OnEditorActionListener() {
         @Override
         public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
             if (actionId == EditorInfo.IME_ACTION_DONE){
@@ -188,7 +188,7 @@ public class TextActivity extends AppCompatActivity{
 
             return false;
         }
-    };
+    };*/
 
    View.OnTouchListener ClickListener = new View.OnTouchListener() {
         @Override
