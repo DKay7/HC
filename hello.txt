@@ -1,1 +1,0 @@
-Hi there! I'm just trying to setup the git using this file

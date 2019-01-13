@@ -1,4 +1,0 @@
-#Mon Mar 26 19:06:42 YEKT 2018
-base.0=C\:\\Users\\Komp\\Desktop\\HandController\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25
-path.0=classes.dex
-renamed.0=classes.dex
