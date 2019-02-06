@@ -1,1 +1,1 @@
-The Flying Snake project's git repository
+The Flying Snake project's git repository for more info checks our project work
