@@ -226,20 +226,12 @@ public class TextActivity extends AppCompatActivity{
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        try {
-            OutputStream OutStream = clientSocket.getOutputStream();
-            OutStream.write(4);
-        }catch (IOException e) {
-            Log.d(" BLUETOOTH", e.getMessage());
-        }
+
         Runnable runDes = new Runnable() {
             @Override
             public void run() {
 
-
-
                 try {
-
                     clientSocket.close();
                     Log.i("***Bluetooth***", "Bluetooth socket successfully close");
                 }catch (IOException e){

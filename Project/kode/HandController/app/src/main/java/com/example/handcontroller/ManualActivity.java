@@ -241,12 +241,7 @@ public class ManualActivity extends AppCompatActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        try {
-            OutputStream OutStream = clientSocket.getOutputStream();
-            OutStream.write(4);
-        }catch (IOException e) {
-            Log.d(" BLUETOOTH", e.getMessage());
-        }
+
         Runnable runDes = new Runnable() {
             @Override
             public void run() {
