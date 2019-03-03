@@ -36,7 +36,7 @@ public class ManualActivity extends AppCompatActivity {
     BluetoothSocket clientSocket;
     int res=0;
     int erCount=0;
-    int minVal=5;
+    int minVal=10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

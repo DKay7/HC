@@ -8,7 +8,7 @@ class Hand{
  public:
     
     const int ServoIn1 =3; //Порты подключения сервоприводов
-    const int ServoIn2 =4;
+    const int ServoIn2 =8;
     const int ServoIn3 =5;
     const int ServoIn4 =6;
     const int ServoIn5 =7;
