@@ -12,7 +12,7 @@ class Hand{
     const int ServoIn3 =5;
     const int ServoIn4 =6;
     const int ServoIn5 =7;
-    static const int n=32;
+    static const int n=58;
     static const int m=6;
     
     void att();
